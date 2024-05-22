@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: Play, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#transactionInputForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+input[type="number"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 500px;
+    box-sizing: border-box;
+    font-family: Play, sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Стиль для кнопки */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стиль для выпадающего списка */
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.delete-btn {
+    background-color: #ff0000;
+}
+
+.positive {
+    background-color: #d4edda;
+}
+
+.negative {
+    background-color: #f8d7da;
+}
+
+#transactionDetails {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}

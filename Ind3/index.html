@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Личный учет финансов</title>
+</head>
+<body>
+    <h1>Личный учет финансов</h1>
+
+    <img src="src/finance.png" alt="Финансы">
+    
+    <div id="transactionInputForm">
+        <form id="transactionForm">
+            <div>
+                <input type="number" id="amount" placeholder="Сумма" step="any" required>
+            </div>
+            <div>
+                <select id="category" required>
+                    <option value="" disabled selected>Категория</option>
+                    <option value="Еда">Еда</option>
+                    <option value="Транспорт">Транспорт</option>
+                    <option value="Развлечения">Развлечения</option>
+                    <option value="Зарплата">Зарплата</option>
+                    <option value="Подарки">Подарки</option>
+                    <option value="Покупки">Покупки</option>
+                    <option value="Путешествия">Путешествия</option>
+                    <option value="Счета и платежи">Счета и платежи</option>
+                    <option value="Здоровье и красота">Здоровье и красота</option>
+                    <option value="Дом и ремонт">Дом и ремонт</option>
+                    <option value="Образование">Образование</option>
+                    <option value="Техника и электроника">Техника и электроника</option>
+                    <option value="Другое">Другое</option>
+                </select>
+            </div>
+            <div>
+                <textarea id="description" placeholder="Описание" required></textarea>
+            </div>
+            <button type="submit">Добавить транзакцию</button>
+        </form>
+    </div>
+
+    <h2>Список транзакций</h2>
+    <table id="transactionTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Дата и Время</th>
+                <th>Категория</th>
+                <th>Описание</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Общая сумма: <span id="totalAmount">0</span></h2>
+
+    <div id="transactionDetails">
+        <h3>Подробности транзакции</h3>
+        <p id="details"></p>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
